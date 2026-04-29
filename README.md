@@ -1,2 +1,5 @@
-# Front-End-Essencial
-Exercícios aula de front end - Serratec 2026 
+# Exercícios CSS & HTML
+
+Aluno: João Paulo Cordebello
+
+Repositório contendo exercícios de HTML e CSS organizados por pastas.
