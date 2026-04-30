@@ -1,0 +1,137 @@
+.container {
+
+max-width: 900px;
+
+margin: auto;
+
+background: white;
+
+padding: 20px;
+
+border-radius: 10px;
+
+}
+
+header {
+
+text-align: center;
+
+margin-bottom: 20px;
+
+}
+
+.logo {
+
+width: 200px;
+
+height: auto;
+
+}
+
+body {
+
+font-family: "Space Grotesk", sans-serif;
+
+margin: 20px;
+
+background-color: #00008B;
+
+color: white;
+
+}
+
+h1 {
+
+color: darkred;
+
+text-align: center;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+font-family: "Silkscreen", sans-serif;
+
+font-weight: 700;
+
+margin: 30px 0 20px 0;
+
+}
+
+a {
+
+text-decoration: none;
+
+color: lightblue;
+
+}
+
+.welcome {
+
+background-color: lightgray;
+
+padding: 10px;
+
+color: black;
+
+}
+
+table {
+
+width: 100%;
+
+border-collapse: collapse;
+
+background-color: white;
+
+}
+
+th {
+
+background-color: darkred;
+
+color: black;
+
+padding: 8px;
+
+}
+
+td {
+
+padding: 8px;
+
+text-align: center;
+
+color: black;
+
+}
+
+.imagem-principal {
+
+width: 100%;
+
+max-width: 500px;
+
+}
+
+.galeria img {
+
+width: 150px;
+
+margin: 5px;
+
+}
+
+.social img {
+
+width: 40px;
+
+transition: transform 0.2s;
+
+}
+
+.social img:hover {
+
+transform: scale(1.2);
+
+}
