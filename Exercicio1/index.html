@@ -2,104 +2,217 @@
 <html lang="pt-BR">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-
-<title>CS2 News</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal de notícias sobre Counter-Strike 2 - Rankings, jogadores, times e campeonatos">
+  <meta name="author" content="CS2 News Team">
+  <meta name="theme-color" content="#1a1a2e">
+  
+  <link rel="icon" type="image/png" href="assets/counter-strike-2-logo.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <title>CS2 News - Portal de Notícias Counter-Strike 2</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <!-- MENU FIXO DE NAVEGAÇÃO -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="assets/counter-strike-2-logo.png" alt="Logo CS2" class="nav-logo-img">
+        <span>CS2 News</span>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+        <li class="nav-item"><a href="#ranking" class="nav-link">Ranking</a></li>
+        <li class="nav-item"><a href="#times" class="nav-link">Times</a></li>
+        <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+        <li class="nav-item"><a href="questionario.html" class="nav-link">Questionário</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<header>
+  <!-- HEADER PRINCIPAL -->
+  <header class="hero-header" id="inicio">
+    <div class="header-content">
+      <h1>CS2 News</h1>
+      <p class="subtitle">Seu Portal de Notícias sobre Counter-Strike 2</p>
+      <p class="welcome">
+        Bem-vindo ao portal oficial de notícias sobre Counter-Strike 2.
+        Aqui você encontra as melhores novidades sobre times, jogadores e campeonatos internacionais.
+      </p>
+    </div>
+  </header>
 
-<img 
-src="assets/counter-strike-2-logo.png"
-alt="Logo CS2"
-class="logo">
+  <main class="container">
+    <!-- SEÇÃO DE LINKS IMPORTANTES -->
+    <section class="links-section">
+      <h2> Links Importantes</h2>
+      <div class="links-grid">
+        <a href="#ranking" class="link-card">
+          <i class="fas fa-trophy"></i>
+          <span>Ir para Ranking</span>
+        </a>
+        <a href="https://draft5.gg/" target="_blank" class="link-card external">
+          <i class="fas fa-globe"></i>
+          <span>Draft5 - Notícias CS2</span>
+        </a>
+        <a href="questionario.html" class="link-card">
+          <i class="fas fa-clipboard-list"></i>
+          <span>Responder Questionário</span>
+        </a>
+      </div>
+    </section>
 
-</header>
+    <!-- SEÇÃO RANKING -->
+    <section id="ranking" class="ranking-section">
+      <h2>TOP 10 - Valve Team Ranking Americas</h2>
+      
+      <dl class="descriptive-list">
+        <dt>Ranking Profissional</dt>
+        <dd>Classificação dos principais times competitivos nas Américas</dd>
+      </dl>
 
-<!-- ÂNCORA SUPERIOR -->
-<a id="topo"></a>
+      <ol class="ranking-list">
+        <li class="rank-item">
+          <span class="rank-number">1º</span>
+          <span class="team-name">FURIA</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-number">2º</span>
+          <span class="team-name">Legacy</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-number">3º</span>
+          <span class="team-name">paiN</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-number">4º</span>
+          <span class="team-name">9z</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-number">5º</span>
+          <span class="team-name">MIBR</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-number">6º</span>
+          <span class="team-name">M80</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-number">7º</span>
+          <span class="team-name">NRG</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-number">8º</span>
+          <span class="team-name">Wildcard</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-number">9º</span>
+          <span class="team-name">Gaimin Gladiators</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-number">10º</span>
+          <span class="team-name">BESTIA</span>
+        </li>
+      </ol>
+    </section>
 
-<h1>CS2 News</h1>
+    <!-- SEÇÃO TIMES -->
+    <section id="times" class="teams-section">
+      <h2> Jogadores da FURIA</h2>
+      
+      <dl class="descriptive-list">
+        <dt>Elenco Profissional</dt>
+        <dd>Os talentos que representam a FURIA em competições internacionais</dd>
+      </dl>
 
-<p class="welcome">
-Bem-vindo ao portal de notícias sobre Counter-Strike 2.
-Aqui você encontra novidades sobre times, jogadores e campeonatos.
-</p>
+      <ul class="players-list">
+        <li class="player-item">
+          <img src="assets/600px-Molodoy_at_IEM_Kraków_2026.jpg" alt="molodoy" class="player-image">
+          <span class="player-name">molodoy</span>
+        </li>
+        <li class="player-item">
+          <img src="assets/600px-YEKINDAR_at_BLAST_Open_Spring_2026.jpg" alt="YEKINDAR" class="player-image">
+          <span class="player-name">YEKINDAR</span>
+        </li>
+        <li class="player-item">
+          <img src="assets/600px-FalleN_at_BLAST_Open_Spring_2026.jpg" alt="FalleN" class="player-image">
+          <span class="player-name">FalleN</span>
+        </li>
+        <li class="player-item">
+          <img src="assets/600px-KSCERATO_at_BLAST_Open_Spring_2026.jpg" alt="KSCERATO" class="player-image">
+          <span class="player-name">KSCERATO</span>
+        </li>
+        <li class="player-item">
+          <img src="assets/600px-Yuurih_at_BLAST_Bounty_Winter_2026.jpg" alt="yuurih" class="player-image">
+          <span class="player-name">yuurih</span>
+        </li>
+      </ul>
+    </section>
 
-<!-- LINKS -->
-<h2>Links Importantes</h2>
+    <!-- SEÇÃO DE NOTÍCIA DESTAQUE -->
+    <section class="featured-section">
+      <h2>A Volta do Mapa Cache</h2>
+      <article class="featured-article">
+        <img src="https://hawk.live/storage/images/variants/posts/ab22fcd6857c2dd31a098e1a7b4580381bedeee8e53fb7a600d75967749dd862-w728-h381.avif"
+             alt="Mapa Cache em Counter-Strike 2"
+             class="featured-image">
+      </article>
+    </section>
 
-<a href="#ranking">Ir para Ranking</a>
-<br>
+    <!-- SEÇÃO DE CONTATO -->
+    <section id="contato" class="contact-section">
+      <h2> Entre em Contato</h2>
+      
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" placeholder="Seu nome" required>
+        </div>
 
-<a href="https://draft5.gg/" target="_blank">
-Visitar Draft5 (Notícias CS2)
-</a>
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+        </div>
 
-<br><br>
+        <div class="form-group">
+          <label for="subject">Assunto:</label>
+          <input type="text" id="subject" name="subject" placeholder="Assunto da mensagem" required>
+        </div>
 
-<a href="questionario.html">
-Responder Questionário
-</a>
+        <div class="form-group">
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Sua mensagem aqui..." required></textarea>
+        </div>
 
-<hr>
+        <button type="submit" class="btn-submit">
+          <i class="fas fa-paper-plane"></i> Enviar Mensagem
+        </button>
+      </form>
 
-<!-- LISTA ORDENADA -->
-<div id="ranking">
+      <div class="social-links">
+        <a href="https://www.linkedin.com" target="_blank" class="social-link" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:contato@cs2news.com" class="social-link" title="E-mail">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-link" title="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </section>
+  </main>
 
-<h2>TOP 10 - Valve Team Ranking Americas</h2>
 
-<ol>
+</html>
 
-<li>FURIA</li>
-<li>Legacy</li>
-<li>paiN</li>
-<li>9z</li>
-<li>MIBR</li>
-<li>M80</li>
-<li>NRG</li>
-<li>Wildcard</li>
-<li>Gaimin Gladiators</li>
-<li>BESTIA</li>
 
-</ol>
-
-</div>
-
-<!-- LISTA NÃO ORDENADA -->
-
-<h2>Jogadores da FURIA</h2>
-
-<ul>
-
-<li>molodoy</li>
-<li>YEKINDAR</li>
-<li>FalleN</li>
-<li>KSCERATO</li>
-<li>yuurih</li>
-
-</ul>
-
-<hr>
-
-<!-- IMAGEM -->
-
-<h2>A Volta do mapa Cache</h2>
-
-<img
-src="https://hawk.live/storage/images/variants/posts/ab22fcd6857c2dd31a098e1a7b4580381bedeee8e53fb7a600d75967749dd862-w728-h381.avif"
-width="500"
->
 
 <hr>
 
@@ -272,6 +385,17 @@ alt="YouTube">
 
 </a>
 
+</body>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2026 CS2 News. Joao Paulo Cordebello</p>
+      <p>Serratec - 2026</p>
+      <a href="#inicio" class="back-to-top">
+        <i class="fas fa-arrow-up"></i> Voltar ao Topo
+      </a>
+    </div>
+  </footer>
 </body>
 
 </html>

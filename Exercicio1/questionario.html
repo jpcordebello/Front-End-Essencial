@@ -2,67 +2,151 @@
 <html lang="pt-BR">
 
 <head>
-
-<meta charset="UTF-8">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-
-<title>Questionário Cache</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Questionário sobre o mapa Cache de Counter-Strike 2">
+  <meta name="author" content="CS2 News Team">
+  
+  <link rel="icon" type="image/png" href="assets/counter-strike-2-logo.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <title>Questionário - Mapa Cache | CS2 News</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <!-- MENU DE NAVEGAÇÃO -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="assets/counter-strike-2-logo.png" alt="Logo CS2" class="nav-logo-img">
+        <span>CS2 News</span>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html#inicio" class="nav-link">Início</a></li>
+        <li class="nav-item"><a href="index.html#ranking" class="nav-link">Ranking</a></li>
+        <li class="nav-item"><a href="index.html#times" class="nav-link">Times</a></li>
+        <li class="nav-item"><a href="index.html#contato" class="nav-link">Contato</a></li>
+        <li class="nav-item"><a href="#" class="nav-link active">Questionário</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<h1>Questionário - Mapa Cache</h1>
+  <!-- HEADER -->
+  <header class="hero-header">
+    <div class="header-content">
+      <h1><i class="fas fa-question-circle"></i> Questionário Cache</h1>
+      <p class="subtitle">Participe da nossa pesquisa sobre o mapa Cache</p>
+    </div>
+  </header>
 
-<form>
+  <main class="container">
+    <!-- SEÇÃO DE QUESTIONÁRIO -->
+    <section class="survey-section">
+      <h2>📋 Pesquisa: Mapa Cache</h2>
+      
+      <p class="survey-intro">
+        Seu feedback é muito importante para nós! Por favor, responda as perguntas abaixo sobre sua experiência com o mapa Cache em Counter-Strike 2.
+      </p>
 
-<p>Você já jogou o mapa Cache?</p>
+      <form class="survey-form">
+        <!-- PERGUNTA 1 -->
+        <fieldset class="form-fieldset">
+          <legend>Você já jogou o mapa Cache?</legend>
+          
+          <div class="radio-group">
+            <div class="radio-item">
+              <input type="radio" id="cache_sim" name="cache" value="sim" required>
+              <label for="cache_sim">
+                <i class="fas fa-check-circle"></i> Sim
+              </label>
+            </div>
+            
+            <div class="radio-item">
+              <input type="radio" id="cache_nao" name="cache" value="nao" required>
+              <label for="cache_nao">
+                <i class="fas fa-times-circle"></i> Não
+              </label>
+            </div>
+          </div>
+        </fieldset>
 
-<input type="radio" name="cache"> Sim
+        <!-- PERGUNTA 2 -->
+        <fieldset class="form-fieldset">
+          <legend>Pretende jogar o mapa Cache?</legend>
+          
+          <div class="radio-group">
+            <div class="radio-item">
+              <input type="radio" id="pretende_sim" name="pretende" value="sim" required>
+              <label for="pretende_sim">
+                <i class="fas fa-check-circle"></i> Sim
+              </label>
+            </div>
+            
+            <div class="radio-item">
+              <input type="radio" id="pretende_nao" name="pretende" value="nao" required>
+              <label for="pretende_nao">
+                <i class="fas fa-times-circle"></i> Não
+              </label>
+            </div>
+          </div>
+        </fieldset>
 
-<input type="radio" name="cache"> Não
+        <!-- PERGUNTA 3 -->
+        <fieldset class="form-fieldset">
+          <legend>Você acha que o mapa voltará aos mapas oficiais?</legend>
+          
+          <div class="radio-group">
+            <div class="radio-item">
+              <input type="radio" id="oficial_sim" name="oficial" value="sim" required>
+              <label for="oficial_sim">
+                <i class="fas fa-check-circle"></i> Sim
+              </label>
+            </div>
+            
+            <div class="radio-item">
+              <input type="radio" id="oficial_nao" name="oficial" value="nao" required>
+              <label for="oficial_nao">
+                <i class="fas fa-times-circle"></i> Não
+              </label>
+            </div>
+          </div>
+        </fieldset>
 
-<br><br>
+        <!-- BOTÕES -->
+        <div class="button-group">
+          <button type="submit" class="btn-submit">
+            <i class="fas fa-paper-plane"></i> Enviar Respostas
+          </button>
+          
+          <button type="reset" class="btn-reset">
+            <i class="fas fa-redo"></i> Limpar Formulário
+          </button>
+        </div>
+      </form>
+    </section>
 
-<p>Pretende jogar?</p>
+    <!-- CALL TO ACTION -->
+    <section class="cta-section">
+      <h2>Quer saber mais?</h2>
+      <p>Volte para a página principal e confira as últimas notícias sobre Counter-Strike 2!</p>
+      <a href="index.html" class="btn-link">
+        <i class="fas fa-arrow-left"></i> Voltar para Página Inicial
+      </a>
+    </section>
+  </main>
 
-<input type="radio" name="pretende"> Sim
-
-<input type="radio" name="pretende"> Não
-
-<br><br>
-
-<p>Acha que o mapa voltará aos mapas oficiais?</p>
-
-<input type="radio" name="oficial"> Sim
-
-<input type="radio" name="oficial"> Não
-
-<br><br>
-
-<button type="submit">
-Enviar respostas
-</button>
-
-<button type="reset">
-Limpar
-</button>
-
-</form>
-
-<br>
-
-<a href="index.html">
-
-Voltar para página inicial
-
-</a>
-
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2026 CS2 News. Todos os direitos reservados.</p>
+      <p>Obrigado por participar da nossa pesquisa!</p>
+    </div>
+  </footer>
 </body>
 
 </html>
